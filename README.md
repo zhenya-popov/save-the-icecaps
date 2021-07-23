@@ -11,9 +11,11 @@ It's useful to have a git installed, otherwise it's also possible to download zi
 
 ### Run the code
 
-Run `npm run compile` to compile typescript
-Run `npm run serve` to start the server
-Then go to `http://localhost:8000/`
+In project root: 
+- Run `npm install` to install required dependencies
+- Run `npm run compile` to compile typescript
+- Run `npm run serve` to start the server
+- Open `http://localhost:8000/` in browser
 
 ## Technical decisions 
 
