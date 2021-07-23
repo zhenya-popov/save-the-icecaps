@@ -9,9 +9,8 @@ const confirmationTextEl = confirmationAreaEl.querySelector(".confirmation-area-
 checkFormValidity();
 
 function onFormSubmit(): void {
-  if (confirmationAreaEl) {
-    confirmationAreaEl.classList.remove('is-hidden')
-  }
+  // Prepare data and show final confirmation  
+  confirmationAreaEl.classList.remove('is-hidden')
   const donationValue = donationEl.value;
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const current = new Date();
@@ -23,7 +22,8 @@ function onFormSubmit(): void {
   confirmationTextEl.innerHTML = finalConfirmationText;
 }
 
-function markRequiredAttributes(event: Event): void {
+function markRequiredFields(event: Event): void {
+  // Check if form elements pass validation. Show/hide error message
   const element = event.target as HTMLInputElement;
   const errorMsgId = element.getAttribute('aria-describedby');
   const errorMsgEl = document.querySelector('#' + errorMsgId) as HTMLElement;
@@ -40,10 +40,12 @@ function markRequiredAttributes(event: Event): void {
 }
 
 function checkFormValidity(): void {
+  // Keep submit button disabled while form is invalid
   submitBtn.disabled = !form.checkValidity();
 }
 
 function onFinalSubmit(): void {
+  // Show final modal dialog and reload the page on modal closed
   modalText.innerHTML = "Thank you for the donation, we highly appreciate your passion to protect the world around us! Please visit 'About us' section to learn more of how you can help to defend your planet.";
   modalEl.style.display = "block";
   modalButton.addEventListener('click', () => closeModalAndReload());
@@ -52,6 +54,7 @@ function onFinalSubmit(): void {
 }
 
 function onSubscriptionChanged(event: Event): void {
+  // Show sad dialog if user decide to cancel subscription
   const target = event.currentTarget as HTMLInputElement;
   if(target && !target.checked) {
     modalText.innerHTML = "We will miss you. You can change your mind any time. Thank you for being part of our mission!";

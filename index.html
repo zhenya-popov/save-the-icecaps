@@ -30,7 +30,7 @@
           <label for="name">Full Name</label>
         </div>
         <div class="col-75">
-          <input required type="text" id="name" name="name" onblur="markRequiredAttributes(event)" placeholder="Your full name" aria-describedby="name-required-message">
+          <input required type="text" id="name" name="name" onblur="markRequiredFields(event)" placeholder="Your full name" aria-describedby="name-required-message">
           <div id="name-required-message" class="visually-hidden">Name is required</div>
         </div>
       </div>
@@ -39,7 +39,7 @@
           <label for="address">Address</label>
         </div>
         <div class="col-75">
-          <textarea required id="address" name="address" onblur="markRequiredAttributes(event)" placeholder="Your home address" aria-describedby="address-required-message"></textarea>
+          <textarea required id="address" name="address" onblur="markRequiredFields(event)" placeholder="Your home address" aria-describedby="address-required-message"></textarea>
           <div id="address-required-message" class="visually-hidden">Address is required</div>
         </div>
       </div>
@@ -56,7 +56,7 @@
           <label for="country">Country</label>
         </div>
         <div class="col-75">
-            <select required id="country" name="country" onblur="markRequiredAttributes(event)" aria-describedby="country-required-message">
+            <select required id="country" name="country" onblur="markRequiredFields(event)" aria-describedby="country-required-message">
                 <option></option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Aland Islands">Aland Islands</option>
@@ -330,7 +330,7 @@
         <label for="subscribe">I would like to subscribe for monthly donations</label>
       </div>
       <div class="row">
-        <input type="checkbox" id="terms" name="terms" onchange="markRequiredAttributes(event)"
+        <input type="checkbox" id="terms" name="terms" onchange="markRequiredFields(event)"
         required checked aria-describedby="terms-required-message">
         <label for="terms">I agree with all <a href="javascript:void(0)">Terms and Conditions</a></label>
         <div id="terms-required-message" class="visually-hidden">You must accept terms and conditions to proceed</div>
