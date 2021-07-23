@@ -1,0 +1,19 @@
+{
+  "name": "save-the-icecaps",
+  "version": "0.1.0",
+  "description": "NGO project to protect the Earth icecaps, it's most valuable mechanism to cool down and natural storage of 70% of planet fresh water",
+  "dependencies": {},
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jobilla/save-the-icecaps/blob/main/INSTRUCTIONS.md"
+  },
+  "author": "Zhenya Popov",
+  "license": "ISC"
+}
