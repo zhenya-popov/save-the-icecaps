@@ -20,7 +20,7 @@ In project root:
 ## Technical decisions 
 
 Okay, are we going to use any of the most popular frameworks for implementation? After some considerations I chose not to. Let me explain this decision. The most important question a developer should ask him/herself before using some tools - is it required? Will it's usage simplify my life, or the lives of my fellow colleagues who might need to support this app in future? Does it bring necessary architectural benefits?
-Angular is definite overkill for such a project, Vue - I don't have experience in it, maybe React? Hmmm.. Still a lot of things to learn in React, plus, is it worth it? I decided - no, and never regret this decision during the implementation cycle (well, to be completely honest, all DOM manipulations are definitely easier within the framework, however, it's a matter of minutes and readability doesn't suffer, I hope).
+Angular is definite overkill for such a project, Vue - I don't have experience in it, maybe React? Hmmm.. I don't have enough expierence in React to do things in a best way, plus, is it worth it? I decided - no, and never regret this decision during the implementation cycle (well, to be completely honest, all DOM manipulations are definitely easier within the framework, however, it's a matter of minutes and readability doesn't suffer, I hope).
 Going further, I don't even need OOP for this task. Not, really, have you ever considered making OOP from simple html plus a few event handlers?
 I understand these might be the most arguable decisions in a whole project, however, I decided to use my time putting more effort on user-related requirements instead of introducing some architecture just to show I am able to do so :)
  
